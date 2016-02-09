@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Olio9_3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Olio9_3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="HeightTextBox" HorizontalAlignment="Right" Margin="0,181,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBlock x:Name="HeightTextBlock" HorizontalAlignment="Right" Margin="0,181,491,0" TextWrapping="Wrap" Text="Window Height (mm):" VerticalAlignment="Top" Height="32" TextAlignment="Right"/>
+        <TextBox x:Name="WidthTextBox" HorizontalAlignment="Right" Margin="0,218,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBlock x:Name="WidtTextBlock" HorizontalAlignment="Right" Margin="0,218,491,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right" SelectionChanged="HeightTextBlock_Copy_SelectionChanged">
+        	<Run Text="Window "/>
+        	<Run Text="Width"/>
+        	<Run Text=" (mm):"/>
+        </TextBlock>
+        <TextBox x:Name="FrameTextBox" HorizontalAlignment="Right" Margin="0,255,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBlock x:Name="FrameTextBlock" HorizontalAlignment="Right" Margin="0,255,492,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right" Text="Frame Width (mm):"/>
+        <Button x:Name="CalculateButton" Content="Calculate" HorizontalAlignment="Right" Margin="0,302,330,0" VerticalAlignment="Top" Width="156" Click="CalculateButton_Click" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBox x:Name="WindowTextBox" HorizontalAlignment="Right" Margin="0,349,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light"/>
+        <TextBlock x:Name="WindowTextBlock" HorizontalAlignment="Right" Margin="0,349,491,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right">
+        	<Run Text="Window Area:"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBox x:Name="GlassTextBox" HorizontalAlignment="Right" Margin="0,386,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBlock x:Name="GlassTextBlock" HorizontalAlignment="Right" Margin="0,386,491,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right" SelectionChanged="HeightTextBlock_Copy_SelectionChanged">
+        	<Run Text="Glass Area:"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <TextBox x:Name="FrameCircuitTextBox" HorizontalAlignment="Right" Margin="0,423,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBlock x:Name="FrameCircuitTextBlock" HorizontalAlignment="Right" Margin="0,423,492,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right" SelectionChanged="FrameCircuitTextBlock_SelectionChanged" Text="Frame Circuit:"/>
+
+    </Grid>
+</Page>
