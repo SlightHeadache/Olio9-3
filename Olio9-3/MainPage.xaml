@@ -16,7 +16,7 @@
         	<Run Text="Width"/>
         	<Run Text=" (mm):"/>
         </TextBlock>
-        <TextBox x:Name="FrameTextBox" HorizontalAlignment="Right" Margin="0,255,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
+        <TextBox x:Name="FrameTextBox" HorizontalAlignment="Right" Margin="0,255,330,0" TextWrapping="Wrap" Text="45" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
         <TextBlock x:Name="FrameTextBlock" HorizontalAlignment="Right" Margin="0,255,492,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" TextAlignment="Right" Text="Frame Width (mm):"/>
         <Button x:Name="CalculateButton" Content="Calculate" HorizontalAlignment="Right" Margin="0,302,330,0" VerticalAlignment="Top" Width="156" Click="CalculateButton_Click" RequestedTheme="Light" IsDoubleTapEnabled="False"/>
         <TextBox x:Name="WindowTextBox" HorizontalAlignment="Right" Margin="0,349,330,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" TextAlignment="Left" Width="156" RequestedTheme="Light"/>

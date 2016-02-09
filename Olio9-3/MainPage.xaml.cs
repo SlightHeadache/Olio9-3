@@ -56,5 +56,10 @@ namespace Olio9_3
                 FrameCircuitTextBox.Text = "Input!";
             }
         }
+
+        private void FrameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
